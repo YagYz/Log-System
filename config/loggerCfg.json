@@ -1,0 +1,8 @@
+{
+    "logger": {
+        "log_level": "INFO",
+        "file_log": true,
+        "console_log": true,
+        "file_path": "lastest.log"
+    }
+}
