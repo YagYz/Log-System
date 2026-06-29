@@ -28,7 +28,7 @@ void Logger::init(const std::string& configPath) {
     m_logToFile = true;
     m_logToConsole = true;
 
-    m_fileStream.open("loggerCfp.json", std::ios::app);
+    m_fileStream.open("lastest.log", std::ios::app);
 
     if (!m_fileStream.is_open()) {
         std::cerr << "[CRITICAL ERROR] Log Folder Not Found!" << std::endl;

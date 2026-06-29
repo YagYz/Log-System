@@ -4,6 +4,7 @@
 
 # Loglar
 logs/*.log
+*.log
 
 # VS Code Ayarlari
 .vscode/
