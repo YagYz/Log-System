@@ -3,12 +3,13 @@
 int main() {
     Logger myLogger;
     
-    myLogger.init("test"); 
+    // Initialize the logger with the JSON configuration
+    myLogger.init("config/loggerCfg.json"); 
     
-    myLogger.info("Logger basariyla baslatildi.");
-    myLogger.debug("Bu bir debug mesajidir.");
-    myLogger.warning("Bellek kullanimi sinira yaklasti!");
-    myLogger.error("Veritabani baglantisi koptu.");
+    myLogger.info("Logger initialized successfully.");
+    myLogger.debug("This is a debug message.");
+    myLogger.warning("Memory usage is approaching the limit!");
+    myLogger.error("Database connection lost.");
     
     return 0;
 }

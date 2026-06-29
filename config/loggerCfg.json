@@ -1,8 +1,9 @@
 {
     "logger": {
-        "log_level": "INFO",
-        "file_log": true,
-        "console_log": true,
-        "file_path": "lastest.log"
+        "logToConsole": true,
+        "logToFile": true,
+        "logFilePath": "app_runtime.log",
+        "activeLogLevel": "DEBUG",
+        "formatPattern": "[%TIME%] [%LEVEL%] %MESSAGE%"
     }
 }
