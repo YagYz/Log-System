@@ -13,7 +13,7 @@ enum class LogLevel {
     ERROR
 };
 
-class logger
+class Logger
 {
 private:
     bool m_logToConsole;
@@ -22,14 +22,15 @@ private:
     std::ofstream m_fileStream;
     std::mutex m_mutex;
     std::string m_formatPattern;
+    LogLevel m_activeLogLevel;
 
     // Replace output message
     void replace_all(std::string& str, const std::string& from, const std::string& to);
 
 public:
     // Constructer and Deconstructer
-    logger();
-    ~logger();
+    Logger();
+    ~Logger();
 
     // Inital Fonk.
     void init(const std::string& configPath);
